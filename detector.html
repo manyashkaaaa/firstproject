@@ -1,0 +1,52 @@
+﻿<!DOCTYPE html>
+<html>
+
+  <head>
+    <meta charset="utf-8">
+    <title>Online Object Detector - Vladimir Iashin</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="">
+    <link href="css2?family=Open+Sans&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="ajax/libs/normalize/5.0.0/normalize.min.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="icon" href="favicon.ico" type="image/x-icon">
+  </head>
+  <style>
+    body { text-align: center; }
+    p { width: 90%; }
+  </style>
+
+  <body>
+
+    <ul class="breadcrumb"> Проект Шевелиной Марии  "Реализаци веб-демо с моделью детектирования"
+
+    <h1> Детекция объектов </h1>
+
+    <div class="section_content" style="font-size: 1em; padding: 0;">
+
+      <hr style="margin: 1em;">
+
+      <!-- buttons -->
+      <div style="margin: 1em;">
+        <!-- input file -->
+        <div id="examples_text" class="examples_text">
+        </div>
+        <label id="upload" for="file-input" class="btn upload" style="margin-top: 1em;"> Загрузи свое изображение </label>
+        <input id="file-input" type="file" accept="image/*">
+        <!-- detect -->
+        <button id="detect" class="btn detect hide"> Detect </button>
+        <!-- reload -->
+        <button id="reload" class="btn reload hide" onclick="reload()"> Reset ↻ </button>
+      </div>
+    </div>
+
+    <!-- image box -->
+    <div class="preview"> </div>
+
+    <script src="ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="npm/exif-js"></script>
+    <script src="js/upload_handler.js"></script>
+    <script src="js/status_checker.js"></script>
+  </body>
+</html>
